@@ -1,2 +1,6 @@
-# team-029-frontend
-Frontend application repository for team 029
+# Team-029 frontend application
+
+## Build tools
+- React
+- Redux
+- Map
