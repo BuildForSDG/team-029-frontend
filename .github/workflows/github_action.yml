@@ -32,9 +32,8 @@ jobs:
       run: npm i -D eslint eslint-config-airbnb-base eslint-plugin-react
         
     - name: Run Audits
-      run: npm run lint
-      
-  build:
+      run: npm run lint      
+   build:
     name: Running unit Tests
     runs-on: ubuntu-latest
 
