@@ -11,6 +11,29 @@ on:
       - develop
 
 jobs:
+   lint: 
+    name: audit code style
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+
+    - name: Prepare Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Deps
+      run: npm i -D eslint eslint-config-airbnb-base eslint-plugin-react
+        
+    - name: Run Audits
+      run: npm run lint
+      
   build:
     name: Running unit Tests
     runs-on: ubuntu-latest
