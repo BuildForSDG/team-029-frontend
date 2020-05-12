@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import App from './App';
+import LandingPage from './Landing.page.jsx';
 
 afterEach(cleanup);
 
-test('renders welcome to our app', () => {
-	const { asFragment } = render(<App />);
+it('renders the landing page to match snapshot', () => {
+	const { asFragment } = render(<LandingPage />);
 	expect(asFragment()).toMatchSnapshot();
 });

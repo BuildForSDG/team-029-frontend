@@ -1,15 +1,16 @@
-import React from 'react';
-import { Button } from 'semantic-ui-react';
+import React, { Fragment } from 'react';
+
+// pages import
+import LandingPage from './pages/landing/Landing.page.jsx';
 
 import './App.scss';
 
-function App() {
-  return (
-    <div className="app">
-      <h1>Hello welcome to our app</h1>
-      <Button>Click Me</Button>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<Fragment>
+			<LandingPage />
+		</Fragment>
+	);
+};
 
 export default App;
