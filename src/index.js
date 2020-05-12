@@ -8,12 +8,12 @@ import { store, persistor } from './redux/store';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <PersistGate persistor={persistor}>
-      <App />
-    </PersistGate>
-  </Provider>,
-  document.getElementById('root')
+	<Provider store={store}>
+		<PersistGate persistor={persistor}>
+			<App />
+		</PersistGate>
+	</Provider>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

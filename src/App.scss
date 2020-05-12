@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-$background: #c4c4c4;
+@import './variables';
 
-.app{
-    background: $background;
-    min-width: 100vw;
-    min-height: 100vh;
-    padding: 4rem 2rem;
+.app {
+	background: $background;
+	min-width: 100vw;
+	min-height: 100vh;
+	padding: 4rem 2rem;
+}
+
+* {
+	font-family: Montserrat;
 }
