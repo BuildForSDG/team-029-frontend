@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.login-page-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: calc(100vh - #{$navbar-height});
+	align-items: center;
+	.login-form {
+		width: 450px;
+		padding: 2rem;
+		display: flex;
+		margin-top: -5rem;
+		flex-direction: column;
+		.reset-password {
+			font-weight: bold;
+			font-size: 15px;
+			color: #000000;
+			cursor: pointer;
+			margin-top: 10px;
+			opacity: 0.8;
+		}
+	}
+}

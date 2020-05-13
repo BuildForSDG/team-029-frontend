@@ -2,111 +2,95 @@
 
 exports[`renders welcome to our app 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="nav-container"
+  >
     <div
-      class="nav-container"
+      class="logo-container"
+    >
+      <img
+        alt="logo"
+        src="logo.png"
+      />
+    </div>
+  </div>
+  <div
+    class="landing"
+  >
+    <div
+      class="left-screen"
     >
       <div
-        class="logo-container"
+        class="caption"
+      >
+        <h3>
+          Emergency Alert 
+          <span>
+            !
+          </span>
+        </h3>
+        <p>
+          With a single click, A road worden would attend to your emergency
+        </p>
+        <p
+          class="tips"
+        >
+          <span
+            class="bar"
+          >
+            |
+          </span>
+           Accident 
+          <span
+            class="bar"
+          >
+            |
+          </span>
+           Robery 
+          <span
+            class="bar"
+          >
+            |
+          </span>
+           Car Breakdown
+        </p>
+        <div
+          class="btns"
+        >
+          <button
+            class="ui button custom-btn transform custom-button"
+          >
+            Send an Alert
+          </button>
+          <h6>
+            Or
+          </h6>
+          <button
+            class="ui button outline transform custom-button"
+          >
+            View Road Info
+          </button>
+        </div>
+      </div>
+      <div
+        class="blob"
       >
         <img
-          alt="logo"
-          src="logo.png"
+          alt="blob"
+          src="blob.png"
         />
       </div>
-      <ul>
-        <li
-          class="active"
-        >
-          <a>
-            Home
-          </a>
-        </li>
-        <li>
-          <a>
-            Road Info
-          </a>
-        </li>
-      </ul>
     </div>
     <div
-      class="main"
+      class="right-screen"
     >
       <div
-        class="left-screen"
+        class="carImg"
       >
-        <div
-          class="caption"
-        >
-          <h3>
-            Emergency Alert 
-            <span>
-              !
-            </span>
-          </h3>
-          <p>
-            With a single click, A road worden would attend to your emergency
-          </p>
-          <p
-            class="tips"
-          >
-            <span
-              class="bar"
-            >
-              |
-            </span>
-             Accident 
-            <span
-              class="bar"
-            >
-              |
-            </span>
-             Robery 
-            <span
-              class="bar"
-            >
-              |
-            </span>
-             Car Breakdown
-          </p>
-          <div
-            class="btns"
-          >
-            <button
-              class="ui button custom-btn"
-            >
-              Send an Alert
-            </button>
-            <h6>
-              Or
-            </h6>
-            <button
-              class="ui button custom-btn outline"
-            >
-              View Road Info
-            </button>
-          </div>
-        </div>
-        <div
-          class="blob"
-        >
-          <img
-            alt="blob"
-            src="blob.png"
-          />
-        </div>
-      </div>
-      <div
-        class="right-screen"
-      >
-        <div
-          class="carImg"
-        >
-          <img
-            alt="car"
-            src="car.png"
-          />
-        </div>
+        <img
+          alt="car"
+          src="car.png"
+        />
       </div>
     </div>
   </div>

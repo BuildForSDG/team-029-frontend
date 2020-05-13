@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.custom-button {
+	color: #ffffff !important;
+	background: #b40000 !important;
+	font-size: 18px !important;
+	&:hover {
+		opacity: 0.8 !important;
+	}
+	&.disabled {
+		background: unset !important;
+	}
+	&.outline {
+		background: #ffff !important;
+		border: 2px solid $primary-color;
+		color: #000000 !important;
+		font-weight: 200;
+		line-height: 10px;
+	}
+	&.transform {
+		transform: scale(0.98);
+	}
+}
