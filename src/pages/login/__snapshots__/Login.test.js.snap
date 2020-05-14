@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <Login /> page component 1`] = `
+<DocumentFragment>
+  <div
+    class="login-page-wrapper"
+  >
+    <form
+      class="login-form"
+    >
+      <div
+        class="heading-container"
+      >
+        <h3
+          class="heading"
+        >
+          Sign In
+        </h3>
+        <div
+          class="underline"
+        />
+      </div>
+      <div
+        class="input-wrapper"
+      >
+        <label
+          for=""
+        >
+          Email or Staff ID
+        </label>
+        <input
+          id=""
+          name=""
+          placeholder="your mail or staff ID"
+          type="text"
+        />
+      </div>
+      <div
+        class="input-wrapper"
+      >
+        <label
+          for=""
+        >
+          Your password
+        </label>
+        <input
+          id=""
+          name=""
+          placeholder="provide a password"
+          type="password"
+        />
+      </div>
+      <button
+        class="ui button  custom-button"
+      >
+        Login
+      </button>
+      <p
+        class="reset-password"
+      >
+        Reset password?
+      </p>
+    </form>
+  </div>
+</DocumentFragment>
+`;
