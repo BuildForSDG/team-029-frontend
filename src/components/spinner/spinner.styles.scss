@@ -1,0 +1,14 @@
+.loader {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 10px;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+	fill: green;
+}

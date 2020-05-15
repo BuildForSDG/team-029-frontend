@@ -9,6 +9,10 @@
 		line-height: 49px;
 		margin-bottom: 2px;
 		color: #2c2c2c;
+		@media screen and (max-width: 700px) {
+			font-size: 20px;
+			margin-bottom: 0;
+		}
 	}
 	.underline {
 		position: absolute;

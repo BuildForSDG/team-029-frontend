@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/button/Button.jsx';
+import EmergencyAlertFormModal from '../../components/emergencyAlertFormModal/EmergencyAlertFormModal.jsx';
 import blobImg from '../../assets/blob.png';
 import carImg from '../../assets/car.png';
 
@@ -18,7 +19,7 @@ const LandingPage = () => (
 					<span className="bar">|</span> Car Breakdown
 				</p>
 				<div className="btns">
-					<Button className="custom-btn transform">Send an Alert</Button>
+					<EmergencyAlertFormModal />
 					<h6>Or</h6>
 					<Button className="outline transform">View Road Info</Button>
 				</div>

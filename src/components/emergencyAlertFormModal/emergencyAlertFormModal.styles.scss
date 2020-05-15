@@ -1,0 +1,19 @@
+.modal {
+	background: unset !important;
+	width: unset !important;
+	div {
+		border-radius: 10px !important;
+	}
+}
+
+.modal-close-icon {
+	color: #d8d8d8 !important;
+	position: abosolute !important;
+	top: 10px !important;
+	right: 20px !important;
+	font-size: 25px !important;
+	&:hover {
+		color: rgba(0, 0, 0, 0.4) !important;
+		transform: scale(1.1);
+	}
+}
