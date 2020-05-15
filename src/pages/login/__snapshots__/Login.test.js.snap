@@ -9,19 +9,19 @@ exports[`Should render <Login /> page component 1`] = `
       class="login-form"
     >
       <div
-        class="heading-container"
+        class="heading-container undefined"
       >
         <h3
-          class="heading"
+          class="undefined heading"
         >
           Sign In
         </h3>
         <div
-          class="underline"
+          class="underline undefined"
         />
       </div>
       <div
-        class="input-wrapper"
+        class="input-wrapper "
       >
         <label
           for=""
@@ -36,7 +36,7 @@ exports[`Should render <Login /> page component 1`] = `
         />
       </div>
       <div
-        class="input-wrapper"
+        class="input-wrapper "
       >
         <label
           for=""

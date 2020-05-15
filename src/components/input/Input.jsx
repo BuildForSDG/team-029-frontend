@@ -3,9 +3,9 @@ import { string, func } from 'prop-types';
 
 import './input.styles.scss';
 
-const Input = ({ label, inputType, placeholder, inputName, onChange }) => {
+const Input = ({ label, inputType, placeholder, inputName, onChange, containerStyle }) => {
 	return (
-		<div className="input-wrapper">
+		<div className={`input-wrapper ${containerStyle}`}>
 			<label htmlFor={inputName}>{label}</label>
 			<input id={inputName} type={inputType} name={inputName} onChange={onChange} placeholder={placeholder} />
 		</div>
@@ -15,7 +15,8 @@ const Input = ({ label, inputType, placeholder, inputName, onChange }) => {
 Input.defaultProps = {
 	inputName: '',
 	placeholder: '',
-	onChange: () => {}
+	onChange: () => {},
+	containerStyle: ''
 };
 
 Input.propTypes = {
@@ -23,7 +24,8 @@ Input.propTypes = {
 	inputType: string.isRequired,
 	placeholder: string,
 	inputName: string,
-	onChange: func
+	onChange: func,
+	containerStyle: string
 };
 
 export default Input;

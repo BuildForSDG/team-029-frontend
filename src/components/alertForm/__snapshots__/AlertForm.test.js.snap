@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <AlertForm/> component 1`] = `
+<DocumentFragment>
+  <div
+    class="form-wrapper"
+  >
+    <form>
+      <div
+        class="heading-container alert-header-container"
+      >
+        <h3
+          class="alert-header heading"
+        >
+          State your Emergency
+        </h3>
+        <div
+          class="underline alert-header-underline"
+        />
+      </div>
+      <div
+        class="input-wrapper "
+      >
+        <label
+          for="name"
+        >
+          Full Name
+        </label>
+        <input
+          id="name"
+          name="name"
+          placeholder="enter your name"
+          type="text"
+        />
+      </div>
+      <div
+        class="two-column"
+      >
+        <div
+          class="two-column-input coordinate-input-wrapper"
+        >
+          <label>
+            Location Coordinate
+          </label>
+          <div
+            class="coordinate"
+          >
+            <input
+              name="lon"
+              placeholder="lon"
+              type="number"
+            />
+            <input
+              name="lat"
+              placeholder="lat"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          class="input-wrapper two-column-input"
+        >
+          <label
+            for="phoneNumber"
+          >
+            Available phone number
+          </label>
+          <input
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="080-000-0010"
+            type="number"
+          />
+        </div>
+      </div>
+      <div
+        class="text-area-input"
+      >
+        <label>
+          Describe your emergency
+        </label>
+        <textarea
+          name="emergency"
+          placeholder="Write some description for your emergency"
+          rows="4"
+        />
+      </div>
+      <button
+        class="ui button  custom-button"
+        style="width: 100%;"
+      >
+        Send Emergency Alert
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
