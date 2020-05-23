@@ -1,0 +1,40 @@
+.coordinate-input-wrapper {
+	display: flex;
+	flex-direction: column;
+	label {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.81);
+		margin-bottom: 9px;
+	}
+	.coordinate {
+		display: flex;
+		background: #ffffff;
+		border: 2px solid #d8d8d8;
+		border-radius: 10px;
+		height: 45px;
+		padding: 5px 1rem;
+		&.focus {
+			box-shadow: 0 0 3px #a60000;
+		}
+		input {
+			border: none;
+			outline: none;
+			font-size: 17px;
+			width: 50%;
+			-moz-appearance: textfield;
+			&:nth-child(1) {
+				border-right: 2px solid #d8d8d8;
+				margin-right: 5px;
+			}
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}

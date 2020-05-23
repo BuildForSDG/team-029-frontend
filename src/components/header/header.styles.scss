@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.heading-container {
+	position: relative;
+	margin-bottom: 3rem;
+	.heading {
+		text-align: center;
+		font-size: 40px;
+		line-height: 49px;
+		margin-bottom: 2px;
+		color: #2c2c2c;
+		@media screen and (max-width: 700px) {
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+	}
+	.underline {
+		position: absolute;
+		left: calc(50% - 220px);
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background: $primary-color;
+		width: 100px;
+		height: 2px;
+		align-self: center;
+		@media screen and (max-width: 700px) {
+			left: calc(50% - 170px);
+		}
+	}
+}
