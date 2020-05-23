@@ -1,5 +1,6 @@
 
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9d695bafaec4e4d980d571bb5932bfb)](https://app.codacy.com/gh/BuildForSDG/team-029-frontend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDG/team-029-frontend&utm_campaign=Badge_Grade_Settings)
+
 
 # Good health and well-being
 Good health and well-being is one of Sustainable Development Goals(SDG) challenges. The aims of this application is to provide solutions that can help avoid, alert, inform, monitor and report road injuries and deaths.
@@ -20,6 +21,11 @@ Modern JavaScript technologies were adopted in this project
 ES2015: Also known as ES6 or ECMASCRIPT 6, is a new and widely used version of Javascript
 that makes it compete healthily with other languages. See [here](https://en.wikipedia.org/wiki/ECMAScript) for more infromation.
 Codes are written in accordance with Airbnb JavaScript style guide, see [here](https://github.com/airbnb/javascript) for details.
+
+## Build tools
+- React
+- Redux
+- Map
 
 # Setup
 
@@ -78,3 +84,4 @@ Your app is ready to be deployed!
 
 ## LICENSE
 MIT
+

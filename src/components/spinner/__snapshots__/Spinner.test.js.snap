@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <Spinner /> 1`] = `
+<DocumentFragment>
+  <div
+    class="loader"
+  >
+    <svg
+      height="30px"
+      id="Layer_1"
+      version="1.1"
+      viewBox="0 0 24 30"
+      width="24px"
+      x="0px"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      y="0px"
+    >
+      <rect
+        fill="#333"
+        height="10"
+        width="4"
+        x="0"
+        y="0"
+      >
+        <animatetransform
+          attributeName="transform"
+          attributeType="xml"
+          begin="0"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="0 0; 0 20; 0 0"
+        />
+      </rect>
+      <rect
+        fill="#333"
+        height="10"
+        width="4"
+        x="10"
+        y="0"
+      >
+        <animatetransform
+          attributeName="transform"
+          attributeType="xml"
+          begin="0.2s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="0 0; 0 20; 0 0"
+        />
+      </rect>
+      <rect
+        fill="#333"
+        height="10"
+        width="4"
+        x="20"
+        y="0"
+      >
+        <animatetransform
+          attributeName="transform"
+          attributeType="xml"
+          begin="0.4s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="0 0; 0 20; 0 0"
+        />
+      </rect>
+    </svg>
+  </div>
+</DocumentFragment>
+`;

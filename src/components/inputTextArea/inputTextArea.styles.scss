@@ -1,0 +1,25 @@
+.text-area-input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	label {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.81);
+		margin-bottom: 9px;
+	}
+	textarea {
+		border: 2px solid #d8d8d8;
+		padding: 1rem;
+		outline: none;
+		font-size: 17px;
+		border-radius: 10px;
+		line-height: 25px;
+		&:focus {
+			box-shadow: 0 0 3px #a60000;
+		}
+	}
+}
