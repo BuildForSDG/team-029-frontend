@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render <Dashboard /> page component 1`] = `
+<DocumentFragment>
+  <div
+    class="pushable dashboard-container"
+  >
+    <div
+      class="ui push left wide visible sidebar side-nav"
+      icon="labeled"
+      vertical="true"
+    >
+      <div
+        class="nav-content"
+      >
+        <div
+          class="header"
+        >
+          <img
+            alt="logo"
+            src="LOGO.svg"
+          />
+          <img
+            alt="close"
+            class="close-btn"
+            src="deleteIcon.svg"
+          />
+        </div>
+        <div
+          class="user"
+        >
+          <div
+            class="profileImg"
+          >
+            <img
+              alt="profile"
+              src="avater.jpg"
+            />
+          </div>
+          <div>
+            <h4>
+              John Mark
+            </h4>
+            <p>
+              Admin
+            </p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <div>
+                <a
+                  href="/dashboard"
+                >
+                  Dashboard
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a
+                  href="/dashboard/worden"
+                >
+                  Road Wordens
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a
+                  href="/dashboard/emergency-tip"
+                >
+                  Emergency Tips
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a
+                  href="/dashboard/road"
+                >
+                  Road
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a
+                  href="/dashboard/profile"
+                >
+                  Profile
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="pusher main-content"
+    >
+      <div
+        class="top-bar"
+      >
+        <div />
+      </div>
+      <div
+        class="page-content"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

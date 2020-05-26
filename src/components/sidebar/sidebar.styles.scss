@@ -1,0 +1,89 @@
+	.side-nav {
+		position: fixed !important;
+		height: 100vh !important;
+		width: 300px !important;
+		display: flex;
+		flex-direction: column;
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 2px solid #ffb75a;
+			height: 70px;
+			img {
+				width: 200px;
+				height: 24px;
+				cursor: pointer;
+				&.close-btn {
+					width: 50px;
+					height: 20px;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+		.user {
+			display: flex;
+			margin-top: 2rem;
+			padding: 0 2rem;
+			align-items: center;
+			.profileImg {
+				width: 90px;
+				height: 90px;
+				margin-right: 1rem;
+				img {
+					width: 90px;
+					height: 90px;
+					border-radius: 50%;
+					border: 2px solid #cccccc;
+				}
+			}
+			h4 {
+				margin: 0;
+				font-size: 17px;
+				font-weight: 600;
+				opacity: 0.9;
+			}
+			p {
+				font-size: 13px;
+				opacity: 0.6;
+			}
+		}
+		ul {
+			list-style: none;
+			margin-top: 2rem;
+			padding: 3px 0;
+			li {
+				height: 45px;
+				width: 100%;
+				padding: 3px 0;
+
+				& > div {
+					padding: 0 2rem;
+				}
+				&.active {
+					background: #eaf1f9;
+					a {
+						opacity: 1;
+						font-weight: bold;
+					}
+					& > div {
+						border-right: 3px solid #b40000;
+					}
+				}
+				a {
+					color: #000000;
+					opacity: 0.8;
+					line-height: 39px;
+					font-size: 15px;
+					&:hover {
+						opacity: 1;
+					}
+					// remove firefox ugly dotted lines
+					&:focus {outline:none;}
+					&::-moz-focus-inner {border:0;}
+				}
+			}
+		}
+	}

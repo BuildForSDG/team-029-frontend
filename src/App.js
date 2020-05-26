@@ -4,19 +4,22 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // pages import
 import LandingPage from './pages/landing/Landing.page.jsx';
 import LoginPage from './pages/login/Login.jsx';
+import Dashboard from './pages/Dasboard/Dashboard.jsx';
+
+import withNavbar from './components/withNavbar/withNavbar.js'
 
 import './App.scss';
-import Navbar from './components/navbar/Navbar.jsx';
-
 const App = () => {
 	return (
-		<Router>
-			<Navbar hasLinks={false} />
-			<Switch>
-				<Route path="/" exact component={LandingPage} />
-				<Route path="/login" exact component={LoginPage} />
-			</Switch>
-		</Router>
+		<main className="app">
+			<Router>
+				<Switch>
+					<Route path="/" exact render={(props) => withNavbar(LandingPage, { componentProps: props })} />
+					<Route path="/login" render={props => withNavbar(LoginPage, { navProps: { hasLinks: false }, componentProps: props })} />
+					<Route path="/dashboard" component={Dashboard} />
+				</Switch>
+			</Router>
+		</main>
 	);
 };
 

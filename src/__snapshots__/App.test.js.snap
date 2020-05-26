@@ -2,97 +2,117 @@
 
 exports[`renders welcome to our app 1`] = `
 <DocumentFragment>
-  <div
-    class="nav-container"
+  <main
+    class="app"
   >
     <div
-      class="logo-container"
-    >
-      <img
-        alt="logo"
-        src="logo.png"
-      />
-    </div>
-  </div>
-  <div
-    class="landing"
-  >
-    <div
-      class="left-screen"
+      class="nav-container"
     >
       <div
-        class="caption"
+        class="logo-container"
       >
-        <h3>
-          Emergency Alert 
-          <span>
-            !
-          </span>
-        </h3>
-        <p>
-          With a single click, A road worden would attend to your emergency
-        </p>
-        <p
-          class="tips"
+        <img
+          alt="logo"
+          src="logo.png"
+        />
+      </div>
+      <ul>
+        <li
+          class="active"
         >
-          <span
-            class="bar"
-          >
-            |
-          </span>
-           Accident 
-          <span
-            class="bar"
-          >
-            |
-          </span>
-           Robery 
-          <span
-            class="bar"
-          >
-            |
-          </span>
-           Car Breakdown
-        </p>
+          <a>
+            Home
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a>
+            Road Info
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="landing"
+    >
+      <div
+        class="left-screen"
+      >
         <div
-          class="btns"
+          class="caption"
         >
-          <button
-            class="ui button custom-btn transform custom-button"
+          <h3>
+            Emergency Alert 
+            <span>
+              !
+            </span>
+          </h3>
+          <p>
+            With a single click, A road worden would attend to your emergency
+          </p>
+          <p
+            class="tips"
           >
-            Send an Alert
-          </button>
-          <h6>
-            Or
-          </h6>
-          <button
-            class="ui button outline transform custom-button"
+            <span
+              class="bar"
+            >
+              |
+            </span>
+             Accident 
+            <span
+              class="bar"
+            >
+              |
+            </span>
+             Robery 
+            <span
+              class="bar"
+            >
+              |
+            </span>
+             Car Breakdown
+          </p>
+          <div
+            class="btns"
           >
-            View Road Info
-          </button>
+            <button
+              class="ui button custom-btn transform custom-button"
+            >
+              Send an Alert
+            </button>
+            <h6>
+              Or
+            </h6>
+            <button
+              class="ui button outline transform custom-button"
+            >
+              View Road Info
+            </button>
+          </div>
+        </div>
+        <div
+          class="blob"
+        >
+          <img
+            alt="blob"
+            src="blob.png"
+          />
         </div>
       </div>
       <div
-        class="blob"
+        class="right-screen"
       >
-        <img
-          alt="blob"
-          src="blob.png"
-        />
+        <div
+          class="carImg"
+        >
+          <img
+            alt="car"
+            src="car.png"
+          />
+        </div>
       </div>
     </div>
-    <div
-      class="right-screen"
-    >
-      <div
-        class="carImg"
-      >
-        <img
-          alt="car"
-          src="car.png"
-        />
-      </div>
-    </div>
-  </div>
+  </main>
 </DocumentFragment>
 `;
