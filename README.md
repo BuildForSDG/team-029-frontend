@@ -7,8 +7,7 @@ Good health and well-being is one of Sustainable Development Goals(SDG) challeng
 This aims to ensure health and well-being for all, at every stage of life. While there has been significant improvement in global health in the last two decades, further progress is needed. Over the last 15 years, the number of childhood deaths has been cut in half. This proves that it is possible to win the fight against almost every disease. Still, we are spending an astonishing amount of money and resources on treating illnesses that are surprisingly easy to prevent. The new goal for worldwide Good Health promotes healthy lifestyles, preventive measures and modern, efficient healthcare for everyone.
 
 # Usage
-<b> Heroku: </b> https://roadry.herokuapp.com/
-<br/><b> API documentation: </b> https://example.app/doc
+<b> Frontend: </b> https://roadery.netlify.app/
 
 ## Technologies
 
@@ -41,9 +40,7 @@ cd team-029-frontend
 npm install
 ```
 
-4. Create a `.env file` in the root directory and setup your database credentials and token/secret key. Check `.env.example` for instruction.
-
-5. Start the application by running
+4. Start the application by running
 ```
 npm start
 ```
@@ -74,8 +71,6 @@ Your app is ready to be deployed!
 - [Kelechi Oliver](https://github.com/Oliver-ke)
 - [Sikiru Moshood](https://github.com/sikiru-moshood)
 - [Alimi Kehinde M](https://github.com/marusoft)
-- [Nnaemeka Augustine Okpallannuozo](https://github.com/MekkyMayata)
-- [Sanya Odare]()
 - [Samuel Adranyi](https://github.com/sadranyi)
 - Femi Akinsiku
 
