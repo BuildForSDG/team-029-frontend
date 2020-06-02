@@ -4,10 +4,7 @@
 @import './variables';
 
 .app {
-	background: $background;
-	min-width: 100vw;
-	min-height: 100vh;
-	padding: 4rem 2rem;
+	overflow: hidden;
 }
 
 * {

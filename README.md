@@ -18,6 +18,27 @@ ES2015: Also known as ES6 or ECMASCRIPT 6, is a new and widely used version of J
 that makes it compete healthily with other languages. See [here](https://en.wikipedia.org/wiki/ECMAScript) for more infromation.
 Codes are written in accordance with Airbnb JavaScript style guide, see [here](https://github.com/airbnb/javascript) for details.
 
+
+# Good health and well-being
+Good health and well-being is one of Sustainable Development Goals(SDG) challenges. The aims of this application is to provide solutions that can help avoid, alert, inform, monitor and report road injuries and deaths.
+
+
+# Why
+This aims to ensure health and well-being for all, at every stage of life. While there has been significant improvement in global health in the last two decades, further progress is needed. Over the last 15 years, the number of childhood deaths has been cut in half. This proves that it is possible to win the fight against almost every disease. Still, we are spending an astonishing amount of money and resources on treating illnesses that are surprisingly easy to prevent. The new goal for worldwide Good Health promotes healthy lifestyles, preventive measures and modern, efficient healthcare for everyone.
+
+# Usage
+<b> Heroku: </b> https://roadry.herokuapp.com/
+<br/><b> API documentation: </b> https://example.app/doc
+
+## Technologies
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Modern JavaScript technologies were adopted in this project
+ES2015: Also known as ES6 or ECMASCRIPT 6, is a new and widely used version of Javascript
+that makes it compete healthily with other languages. See [here](https://en.wikipedia.org/wiki/ECMAScript) for more infromation.
+Codes are written in accordance with Airbnb JavaScript style guide, see [here](https://github.com/airbnb/javascript) for details.
+
 ## Build tools
 - React
 - Redux
@@ -39,7 +60,6 @@ cd team-029-frontend
 ```
 npm install
 ```
-
 4. Start the application by running
 ```
 npm start
