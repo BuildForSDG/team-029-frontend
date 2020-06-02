@@ -24,30 +24,34 @@ exports[`Should render <Login /> page component 1`] = `
         class="input-wrapper "
       >
         <label
-          for=""
+          for="email"
         >
           Email or Staff ID
         </label>
         <input
-          id=""
-          name=""
+          id="email"
+          name="email"
           placeholder="your mail or staff ID"
+          required=""
           type="text"
+          value=""
         />
       </div>
       <div
         class="input-wrapper "
       >
         <label
-          for=""
+          for="password"
         >
           Your password
         </label>
         <input
-          id=""
-          name=""
+          id="password"
+          name="password"
           placeholder="provide a password"
+          required=""
           type="password"
+          value=""
         />
       </div>
       <button

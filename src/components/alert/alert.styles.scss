@@ -1,0 +1,36 @@
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-size: 20px;
+  .close-icon{
+    cursor: pointer;
+    transition: 0.5s all ease-out;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  .message-wrapper{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    h3 {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  &.error{
+    background-color: #e91e63;
+  }
+  &.success{
+    background-color: #8bc34a;
+  }
+  &.warning {
+    background-color:  #f87d09;
+  }
+}

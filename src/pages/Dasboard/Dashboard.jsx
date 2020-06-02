@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import { Sidebar as Layout, Icon } from 'semantic-ui-react';
+import { object } from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import routes from './routes';
 
 import './dashboard.styles.scss';
 
-const Dashboard = () => {
+const Dashboard = ({ userState, history }) => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+	// check for token
+	useEffect(() => {
+		const { token } = userState;
+		if (!token) history.push("/login");
+	})
 
 	const handleSideBarState = (state = null) => {
 		if (state) {
@@ -28,7 +36,12 @@ const Dashboard = () => {
 				<div className="page-content">
 					<Switch>
 						{routes.map(({ main: Page, path, exact }, idx) => (
-							<Route key={idx} exact={exact} path={path} render={(routeProps) => <Page {...routeProps} />} />
+							<Route
+								key={idx}
+								exact={exact}
+								path={path}
+								render={(routeProps) => <Page {...routeProps} />}
+							/>
 						))}
 					</Switch>
 				</div>
@@ -37,4 +50,13 @@ const Dashboard = () => {
 	);
 };
 
-export default Dashboard;
+const mapStateToProps = state => ({
+	userState: state.user
+})
+
+Dashboard.propTypes = {
+	userState: object.isRequired,
+	history: object.isRequired
+}
+
+export default connect(mapStateToProps, null)(Dashboard);
