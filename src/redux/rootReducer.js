@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+import userReducer from './users/userReducer';
 
 // selecting localstorage
-import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
   key: 'root',
@@ -10,6 +11,8 @@ const persistConfig = {
   whitelist: [] // what we want to persist
 };
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  user: userReducer
+});
 
 export default persistReducer(persistConfig, rootReducer);
