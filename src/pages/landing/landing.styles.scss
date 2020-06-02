@@ -4,7 +4,7 @@
 	display: flex;
 	height: calc(100vh - #{$navbar-height});
 	width: 100vw;
-	overflow-y: hidden;
+	overflow: hidden;
 	position: relative;
 	@media screen and (max-width: 700px) {
 		flex-direction: column-reverse;
