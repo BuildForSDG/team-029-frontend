@@ -5,8 +5,9 @@ const { LOGIN_ERROR, LOGIN_SUCCESS, LOGIN_USER, CLEAR_ERROR } = userTypes;
 
 export const loginUser = ({ email, password }) => async (dispatch) => {
   dispatch({ type: LOGIN_USER });
+  const baseUri = process.env.REACT_APP_BASE_URI;
   try {
-    const { data: { data } } = await axios.post('/api/v1/auth/login', { email, password });
+    const { data: { data } } = await axios.post(`${baseUri}/api/v1/auth/login`, { email, password });
     return dispatch({ type: LOGIN_SUCCESS, payload: data });
   } catch (error) {
     console.log(error);
