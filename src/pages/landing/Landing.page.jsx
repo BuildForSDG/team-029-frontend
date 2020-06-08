@@ -13,7 +13,7 @@ const LandingPage = () => (
 				<h3>
 					Emergency Alert <span>!</span>
 				</h3>
-				<p>With a single click, A road worden would attend to your emergency</p>
+				<p>With a single click, A road warden would attend to your emergency</p>
 				<p className="tips">
 					<span className="bar">|</span> Accident <span className="bar">|</span> Robery{' '}
 					<span className="bar">|</span> Car Breakdown

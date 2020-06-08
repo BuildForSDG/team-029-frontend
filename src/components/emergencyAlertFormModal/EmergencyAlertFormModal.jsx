@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { Modal, Icon } from 'semantic-ui-react';
 import Button from '../button/Button.jsx';
 import AlertForm from '../alertForm/AlertForm.jsx';
-
 import './emergencyAlertFormModal.styles.scss';
 
 const EmergencyAlertFormModal = () => {
-	const [ isOPen, setIsOpen ] = useState(false);
+	const [isOPen, setIsOpen] = useState(false);
 	const handleClose = () => {
 		setIsOpen(false);
 	};

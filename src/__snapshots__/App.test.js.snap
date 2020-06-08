@@ -3,7 +3,7 @@
 exports[`renders welcome to our app 1`] = `
 <DocumentFragment>
   <main
-    class="app"
+    id="app"
   >
     <div
       class="nav-container"
@@ -11,24 +11,41 @@ exports[`renders welcome to our app 1`] = `
       <div
         class="logo-container"
       >
-        <img
-          alt="logo"
-          src="logo.png"
-        />
+        <a
+          href="/"
+        >
+          <img
+            alt="logo"
+            src="logo.png"
+          />
+        </a>
       </div>
       <ul>
         <li
           class="active"
         >
-          <a>
+          <a
+            href="/"
+          >
             Home
           </a>
         </li>
         <li
           class=""
         >
-          <a>
+          <a
+            href="/"
+          >
             Road Info
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/login"
+          >
+            Login
           </a>
         </li>
       </ul>

@@ -1,23 +1,26 @@
 @import '../../variables';
 
-.custom-button {
-	color: #ffffff !important;
-	background: #b40000 !important;
-	font-size: 18px !important;
-	&:hover {
-		opacity: 0.8 !important;
-	}
-	&.disabled {
-		background: unset !important;
-	}
-	&.outline {
-		background: #ffff !important;
-		border: 2px solid $primary-color;
-		color: #000000 !important;
-		font-weight: 200;
-		line-height: 10px;
-	}
-	&.transform {
-		transform: scale(0.98);
+#app{
+	button.custom-button {
+		color: #ffffff;
+		background: #b40000;
+		font-size: 18px;
+		&:hover {
+			opacity: 0.8;
+		}
+		&.disabled {
+			background: unset;
+		}
+		&.outline {
+			background: #ffff;
+			border: 2px solid $primary-color;
+			color: #000000;
+			font-weight: 200;
+		}
+		&.transform {
+			transform: scale(0.98);
+		}
 	}
 }
+
+

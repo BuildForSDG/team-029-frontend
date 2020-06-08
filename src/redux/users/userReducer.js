@@ -1,6 +1,6 @@
 import userTypes from './userTypes';
 
-const { LOGIN_ERROR, LOGIN_SUCCESS, LOGIN_USER, CLEAR_ERROR } = userTypes;
+const { LOGIN_ERROR, LOGIN_SUCCESS, LOGIN_USER, CLEAR_ERROR, LOGOUT_USER } = userTypes;
 
 let initialState = {
   token: null,
@@ -16,6 +16,12 @@ export default (state = initialState, action) => {
         ...state,
         loginLoading: true,
         error: null,
+      }
+    case LOGOUT_USER:
+      return {
+        ...state,
+        token: null,
+        usersInfo: null,
       }
     case LOGIN_SUCCESS:
       return {

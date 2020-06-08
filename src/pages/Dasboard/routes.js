@@ -1,5 +1,6 @@
 import React from 'react';
-import Page from './content/Home/Home.jsx';
+import HomePage from './content/Home/Home.jsx';
+import RoadPage from './content/road/Road.jsx';
 
 export default [
 	{
@@ -7,30 +8,30 @@ export default [
 		active: 'Dashboard',
 		name: 'Dashboard',
 		exact: true,
-		main: () => <Page pageName="Home" />
+		main: () => <HomePage pageName="Home" />
 	},
 	{
 		path: '/dashboard/worden',
 		active: 'worden',
 		name: 'Road Wordens',
-		main: () => <Page pageName="Road Worden" />
+		main: () => <h>Hello from worden page</h>
 	},
 	{
 		path: '/dashboard/emergency-tip',
 		active: 'emergencyTips',
 		name: 'Emergency Tips',
-		main: () => <Page pageName="Emergency Tips" />
+		main: () => <h>Hello from emergency tips page</h>
 	},
 	{
 		path: '/dashboard/road',
 		active: 'road',
 		name: 'Road',
-		main: () => <Page pageName="Road" />
+		main: () => <RoadPage />
 	},
 	{
 		path: '/dashboard/profile',
 		name: 'Profile',
 		active: 'profile',
-		main: () => <Page pageName="Profile" />
+		main: () => <h>Hello from profile</h>
 	}
 ];

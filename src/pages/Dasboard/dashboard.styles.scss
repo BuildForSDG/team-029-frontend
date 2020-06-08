@@ -16,16 +16,18 @@
     transition: transform .5s ease,-webkit-transform .5s ease;
     color: rgba(0,0,0,0.7);
   }
+  .user-top-bar{
+    position: absolute;
+    right: 3rem;
+  }
 }
 
 .main-content{
   .page-content{
     min-height: calc(100vh - 70px);
-    //padding: 0rem 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
 

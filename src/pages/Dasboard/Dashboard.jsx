@@ -1,21 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Sidebar as Layout, Icon } from 'semantic-ui-react';
+import { Sidebar as Layout, Icon, Button } from 'semantic-ui-react';
 import { object } from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import routes from './routes';
-
+import setAuthToken from '../../util/setAuthToken';
+import { firestore } from '../../firebase/firebase.util';
+import { updateEmergency } from '../../redux/emergency/emergencyAction';
+import { logOutUser } from '../../redux/users/userAction';
 import './dashboard.styles.scss';
 
-const Dashboard = ({ userState, history }) => {
+const Dashboard = ({ userState, history, updateEmergency, logOutUser }) => {
 	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
 	// check for token
 	useEffect(() => {
 		const { token } = userState;
 		if (!token) history.push("/login");
-	})
+		setAuthToken(token);
+		firestore.collection("lights").onSnapshot(
+			{ includeMetadataChanges: true },
+			(querySnapshot) => {
+				let reports = [];
+				querySnapshot.forEach((doc) => {
+					reports.push(doc.data());
+				});
+				console.log(reports);
+				updateEmergency(reports);
+			})
+	}, [])
+
+	const handleLogout = () => {
+		logOutUser();
+		return history.push("/login");
+	}
 
 	const handleSideBarState = (state = null) => {
 		if (state) {
@@ -31,6 +50,14 @@ const Dashboard = ({ userState, history }) => {
 				<div className="top-bar">
 					<div onClick={() => handleSideBarState()}>
 						{!isSidebarOpen && (<Icon name="bars" className="topbar-nav-btn" />)}
+					</div>
+					<div className="user-top-bar">
+						<Button
+							onClick={handleLogout}
+							circular
+							style={{ color: '#ffb75a', background: "#fff" }}
+							content="Logout"
+						/>
 					</div>
 				</div>
 				<div className="page-content">
@@ -59,4 +86,4 @@ Dashboard.propTypes = {
 	history: object.isRequired
 }
 
-export default connect(mapStateToProps, null)(Dashboard);
+export default connect(mapStateToProps, { updateEmergency, logOutUser })(Dashboard);
