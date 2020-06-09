@@ -11,7 +11,7 @@ import withNavbar from './components/withNavbar/withNavbar.js'
 import './App.scss';
 const App = () => {
 	return (
-		<main className="app">
+		<main id="app">
 			<Router>
 				<Switch>
 					<Route path="/" exact render={(props) => withNavbar(LandingPage, { componentProps: props })} />

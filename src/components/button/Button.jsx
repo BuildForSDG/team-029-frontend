@@ -13,7 +13,7 @@ const CustomButton = ({ onClick, children, className, ...rest }) => {
 };
 
 CustomButton.defaultProps = {
-	onClick: () => {},
+	onClick: () => { },
 	className: ''
 };
 

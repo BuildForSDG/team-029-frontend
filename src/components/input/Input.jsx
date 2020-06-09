@@ -6,7 +6,7 @@ import './input.styles.scss';
 const Input = ({ label, inputType, placeholder, inputName, onChange, containerStyle, value }) => {
 	return (
 		<div className={`input-wrapper ${containerStyle}`}>
-			<label htmlFor={inputName}>{label}</label>
+			{label && (<label htmlFor={inputName}>{label}</label>)}
 			<input
 				id={inputName}
 				type={inputType}
@@ -29,7 +29,7 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
-	label: string.isRequired,
+	label: string,
 	inputType: string.isRequired,
 	placeholder: string,
 	inputName: string,

@@ -3,8 +3,8 @@ import { string, func } from 'prop-types';
 
 import './coordinateInput.style.scss';
 
-const CoordinateInput = ({ onChange, label, containerStyle }) => {
-	const [ isInputFocused, setIsInputFocused ] = useState(false);
+const CoordinateInput = ({ onChange, label, containerStyle, latValue, lonValue }) => {
+	const [isInputFocused, setIsInputFocused] = useState(false);
 	return (
 		<div className={`${containerStyle} coordinate-input-wrapper`}>
 			<label>{label}</label>
@@ -13,17 +13,19 @@ const CoordinateInput = ({ onChange, label, containerStyle }) => {
 					onFocus={() => setIsInputFocused(true)}
 					onBlur={() => setIsInputFocused(false)}
 					type="number"
-					name="lon"
+					name="longitude"
 					onChange={onChange}
 					placeholder="lon"
+					value={lonValue}
 				/>
 				<input
 					onFocus={() => setIsInputFocused(true)}
 					onBlur={() => setIsInputFocused(false)}
 					type="number"
-					name="lat"
+					name="latitude"
 					onChange={onChange}
 					placeholder="lat"
+					value={latValue}
 				/>
 			</div>
 		</div>
@@ -32,7 +34,7 @@ const CoordinateInput = ({ onChange, label, containerStyle }) => {
 
 CoordinateInput.defaultProps = {
 	label: 'Location Coordinate',
-	onChange: () => {},
+	onChange: () => { },
 	containerStyle: ''
 };
 

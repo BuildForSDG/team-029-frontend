@@ -1,0 +1,15 @@
+.select-input-wrapper {
+	width: 100%;
+	margin-bottom: 2rem;
+	display: flex;
+  flex-direction: column;
+  label {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.81);
+		margin-bottom: 9px;
+	}
+}
