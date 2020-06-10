@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import routes from './routes';
 import setAuthToken from '../../util/setAuthToken';
-import { firestore } from '../../firebase/firebase.util';
+import { firestore, database } from '../../firebase/firebase.util';
 import { updateEmergency } from '../../redux/emergency/emergencyAction';
 import { logOutUser } from '../../redux/users/userAction';
 import './dashboard.styles.scss';
@@ -19,16 +19,19 @@ const Dashboard = ({ userState, history, updateEmergency, logOutUser }) => {
 		const { token } = userState;
 		if (!token) history.push("/login");
 		setAuthToken(token);
-		firestore.collection("lights").onSnapshot(
-			{ includeMetadataChanges: true },
-			(querySnapshot) => {
-				let reports = [];
-				querySnapshot.forEach((doc) => {
-					reports.push(doc.data());
+		database.ref().on("value", (snapshot) => {
+			const vals = snapshot.val();
+			console.log(snapshot);
+			let _records = [];
+			for (var key in vals) {
+				_records.push({
+					...vals[key],
+					id: key
 				});
-				console.log(reports);
-				updateEmergency(reports);
-			})
+			}
+			console.log(_records);
+			updateEmergency(_records)
+		})
 	}, [])
 
 	const handleLogout = () => {
