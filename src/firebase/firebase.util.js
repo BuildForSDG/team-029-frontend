@@ -1,22 +1,24 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/database'
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyBTqLeU5ZCWaLgFpRDlf09afCM8RGiKHCE",
-  authDomain: "envyuser-f1981.firebaseapp.com",
-  databaseURL: "https://envyuser-f1981.firebaseio.com",
-  projectId: "envyuser-f1981",
-  storageBucket: "envyuser-f1981.appspot.com",
-  messagingSenderId: "534607337907",
-  appId: "1:534607337907:web:c72e81d90da358496753c6"
+  apiKey: "AIzaSyBDk9v33WQc0g99_5qL1Jb8R_rryzfZs8k",
+  authDomain: "roadry-cloud.firebaseapp.com",
+  databaseURL: "https://roadry-cloud.firebaseio.com",
+  projectId: "roadry-cloud",
+  storageBucket: "roadry-cloud.appspot.com",
+  messagingSenderId: "29925042270",
+  appId: "1:29925042270:web:edf0a2bc785e109aa22ccf"
 };
 
 firebase.initializeApp(config);
 export const firestore = firebase.firestore();
+export const database = firebase.database();
 
-export const fetchAccidentReport = () => {
-  return firestore.collection("light").onSnapshot({ includeMetadataChanges: true }, (docs) => {
-    console.log(docs);
-  })
-}
+// export const fetchAccidentReport = () => {
+//   return firestore.collection("light").onSnapshot({ includeMetadataChanges: true }, (docs) => {
+//     console.log(docs);
+//   })
+// }

@@ -16,7 +16,7 @@ const Home = ({ pageName, emergencyState }) => {
 				{
 					reports.map((report, idx) => (
 						<h1 key={idx}>
-							<EmergecyCard />
+							<EmergecyCard report={report} />
 						</h1>
 					))
 				}
